@@ -7,9 +7,12 @@ const vazirmatn = Vazirmatn({
   display: "swap",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "دکتر من",
-  description: "پلتفرم جامع جستجوی دکتر و رزرو هتل انلاین",
+  description: "پلتفرم جامع جستجوی دکتر و رزرو هتل آنلاین",
+  icons: {
+    icon: "/favicon.ico", // این مسیر باید درست باشد
+  },
 };
 
 export default function RootLayout({
