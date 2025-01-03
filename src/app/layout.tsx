@@ -4,6 +4,7 @@ import { Vazirmatn } from "next/font/google";
 import Header from "@/components/header/Header";
 
 import "./globals.css";
+import Footer from "@/components/footer/Footer";
 
 const vazirmatn = Vazirmatn({
   subsets: ["latin", "arabic"],
@@ -28,6 +29,8 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
+        <p className="tagline">نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشگان</p>
+        <Footer />
       </body>
     </html>
   );
