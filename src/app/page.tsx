@@ -1,9 +1,10 @@
+import React from "react";
 import GlobalSearchBox from "@/components/global-search-box/GlobalSearchBox";
 import MyDoctorLogo from "@/logo/my-doctor.logo";
 
 import styles from "./page.module.css";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className={styles.home}>
       <h1>
@@ -20,4 +21,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
