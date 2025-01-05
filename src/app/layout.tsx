@@ -2,20 +2,21 @@ import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 import "./globals.css";
-import Footer from "@/components/footer/Footer";
+import "@/styles/typography.css";
 
 const vazirmatn = Vazirmatn({
   subsets: ["latin", "arabic"],
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "دکتر من",
   description: "پلتفرم جامع جستجوی دکتر و رزرو هتل آنلاین",
   icons: {
-    icon: "/favicon.ico", // این مسیر باید درست باشد
+    icon: "/favicon.ico", // مسیر آیکون باید موجود باشد
   },
 };
 
@@ -29,7 +30,9 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
-        <p className="tagline">نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشگان</p>
+        <p className="tagline">
+          نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشگان
+        </p>
         <Footer />
       </body>
     </html>
