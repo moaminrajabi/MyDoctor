@@ -3,6 +3,19 @@
   grid-template-columns: 1fr 4fr;
   gap: 1rem;
   margin-block-end: 2rem;
+
+  .filters {
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-block-start: 0.5rem;
+
+      > * {
+        flex: 1 0 auto;
+      }
+    }
+  }
 }
 
 .results {

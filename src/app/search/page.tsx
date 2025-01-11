@@ -1,6 +1,7 @@
 import Card from "@/components/card/Card";
 import style from "./page.module.css";
 import React from "react";
+import FilterButton from "@/components/filter-button/FilterButton";
 
 function Page() {
   const items = Array(100)
@@ -12,8 +13,10 @@ function Page() {
       <div className={style.filters}>
         <Card>
           <div className={style.title}>زوج و فرد</div>
-          <button>زوج</button>
-          <button>فرد</button>
+          <div className={style.buttons}>
+            <FilterButton>زوج</FilterButton>
+            <FilterButton>فرد</FilterButton>
+          </div>
         </Card>
       </div>
       <ul className={style.results}>
