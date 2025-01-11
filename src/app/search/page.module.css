@@ -1,22 +1,14 @@
 .page {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  align-items: start;
   gap: 1rem;
   margin-block-end: 2rem;
+}
 
-  .filters {
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-block-start: 0.5rem;
-
-      > * {
-        flex: 1 0 auto;
-        
-      }
-    }
-  }
+.filters {
+  display: grid;
+  gap: 1rem;
 }
 
 .results {
