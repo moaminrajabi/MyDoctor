@@ -1,41 +1,26 @@
-"use client";
-
-import DoctorCard from "@/components/DoctorCard/DoctorCard";
-import { doctors } from "@/data/doctors";
-import React, { useState } from "react";
+import Card from "@/components/card/Card";
+import style from "./page.module.css";
+import React from "react";
 
 function Page() {
-  // تعداد دکترها در هر صفحه
-  const doctorsPerPage = 3;
-  // صفحه‌ی فعلی
-  const [currentPage, setCurrentPage] = useState(1);
-
-  // محاسبه‌ی دکترها برای نمایش در صفحه‌ی فعلی
-  const indexOfLastDoctor = currentPage * doctorsPerPage;
-  const indexOfFirstDoctor = indexOfLastDoctor - doctorsPerPage;
-  const currentDoctors = doctors.slice(indexOfFirstDoctor, indexOfLastDoctor);
-
-  // تغییر صفحه با کلیک روی دکمه‌های صفحه‌بندی
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
-
-  // محاسبه تعداد کل صفحات
-  const pageNumbers = [];
-  for (let i = 1; i <= Math.ceil(doctors.length / doctorsPerPage); i++) {
-    pageNumbers.push(i);
-  }
+  const items = Array(100)
+    .fill(null)
+    .map((_, i) => i + 1);
 
   return (
-    <div>
-      {currentDoctors.map((doctor) => (
-        <DoctorCard key={doctor.id} {...doctor} />
-      ))}
-      <div>
-        {pageNumbers.map((number) => (
-          <button key={number} onClick={() => paginate(number)}>
-            {number}
-          </button>
-        ))}
+    <div className={style.page}>
+      <div className={style.filters}>
+        <Card>
+          <div className={style.title}>زوج و فرد</div>
+          <button>زوج</button>
+          <button>فرد</button>
+        </Card>
       </div>
+      <ul className={style.results}>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
