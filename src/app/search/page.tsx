@@ -16,16 +16,16 @@ function Page() {
           <FilterComponent
             title="زوج یا فرد"
             options={[
-              { value: "even", label: "زوج" },
-              { value: "odd", label: "فرد" },
+              { key: "even", label: "زوج" },
+              { key: "odd", label: "فرد" },
             ]}
           />
           <FilterComponent
             title="بخش پذیری"
             options={[
-              { value: "three", label: "بخش بر ۳ " },
-              { value: "five", label: "بخش بر  ۵" },
-              { value: "seven", label: "بخش بر ۷" },
+              { key: "three", label: "بخش بر ۳ " },
+              { key: "five", label: "بخش بر  ۵" },
+              { key: "seven", label: "بخش بر ۷" },
             ]}
           />
         </div>
