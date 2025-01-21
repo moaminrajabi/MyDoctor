@@ -1,8 +1,9 @@
 import React from "react";
-import GlobalSearchBox from "@/components/global-search-box/GlobalSearchBox";
-import MyDoctorLogo from "@/logo/my-doctor.logo";
 
 import styles from "./page.module.css";
+
+import GlobalSearchBox from "@/components/global-search-box/GlobalSearchBox";
+import MyDoctorLogo from "@/logo/my-doctor.logo";
 
 const Home: React.FC = () => {
   return (

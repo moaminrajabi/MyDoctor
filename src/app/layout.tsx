@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "دکتر من",
   description: "پلتفرم جامع جستجوی دکتر و رزرو هتل آنلاین",
   icons: {
-    icon: "/favicon.ico", // مسیر آیکون باید موجود باشد
+    icon: "/favicon.ico", //  آیکون باید موجود باشد
   },
 };
 

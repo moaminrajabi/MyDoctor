@@ -3,9 +3,9 @@ import { ReactElement } from "react";
 import Image from "next/image";
 
 import notFoundImage from "@/assets/illustrations/not-found.svg";
+import GlobalSearchBox from "@/components/global-search-box/GlobalSearchBox";
 
 import styles from "./not-found.module.css";
-import GlobalSearchBox from "@/components/global-search-box/GlobalSearchBox";
 
 export default function NotFound(): ReactElement {
   return (
