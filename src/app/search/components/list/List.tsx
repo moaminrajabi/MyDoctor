@@ -1,18 +1,18 @@
-import { ReactElement } from "react";
+"use client"
+
+import { ReactElement, useContext } from "react";
 
 import Item from "../item/Item";
 
 import style from "./List.module.css";
-
-const items = Array(100)
-  .fill(null)
-  .map((_, i) => i + 1);
+import { itemContext } from "../../providers/itemsProvider/itemsProvider";
 
 export default function List(): ReactElement {
+  const { filterdItem } = useContext(itemContext);
   return (
     <ul className={style.list}>
-      {items.map((item) => (
-        <Item key={item} item={item} />
+      {filterdItem.map((item) => (
+        <Item key={item.value} item={item} />
       ))}
     </ul>
   );

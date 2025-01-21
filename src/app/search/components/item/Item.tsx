@@ -1,16 +1,15 @@
-"use client";
 
-import { ReactElement, useContext } from "react";
 
-import { FiltersContext } from "@/app/search/providers/filters/FiltersProvider";
+import { ReactElement } from "react";
 
 import style from "./Item.module.css";
 
+import { ItemType } from "@/type/item.type";
+
 type Props = {
-  item: number;
+  item: ItemType;
 };
 
 export default function Item({ item }: Props): ReactElement {
-  const { filters } = useContext(FiltersContext);
-  return <li className={style.item}> {item} </li>;
+  return <li className={style.item}> {item.value} </li>;
 }
