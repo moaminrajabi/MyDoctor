@@ -3,12 +3,10 @@ import React from "react";
 
 import FilterComponent from "./components/filter/FilterComponent";
 import FiltersProvider from "./providers/filters/FiltersProvider";
+import Result from "./components/list/List";
+import List from "./components/list/List";
 
 function Page() {
-  const items = Array(100)
-    .fill(null)
-    .map((_, i) => i + 1);
-
   return (
     <FiltersProvider>
       <div className={style.page}>
@@ -29,11 +27,7 @@ function Page() {
             ]}
           />
         </div>
-        <ul className={style.results}>
-          {items.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+        <List />
       </div>
     </FiltersProvider>
   );
