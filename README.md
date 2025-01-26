@@ -46,5 +46,5 @@ Ensure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/doctor-appointment-booking.git
-cd doctor-appointment-booking
+git clone https://github.com/moaminrajabi/MyDoctor.git
+
