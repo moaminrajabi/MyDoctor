@@ -28,18 +28,6 @@ A web application for booking doctor appointments, allowing patients to easily r
 - **Authentication**: JWT (JSON Web Tokens)
 - **API Requests**: Axios
 
-## Installation
-
-Follow these steps to set up the project locally:
-
-### Prerequisites
-
-Ensure you have the following installed:
-
-- **Node.js** and **npm**
-- **Python** and **pip**
-- **PostgreSQL** (or any other database of choice)
-
 ### Clone the Repository
 
 ```bash
