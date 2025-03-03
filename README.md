@@ -24,7 +24,7 @@ A web application for booking doctor appointments, allowing patients to easily r
 
 ## Technologies Used
 
-- **Frontend**: React.js, TypeScript, CSS
+- **Frontend**: Next.js, TypeScript, CSS
 - **Authentication**: JWT (JSON Web Tokens)
 - **API Requests**: Axios
 
