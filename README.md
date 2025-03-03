@@ -25,11 +25,8 @@ A web application for booking doctor appointments, allowing patients to easily r
 ## Technologies Used
 
 - **Frontend**: React.js, TypeScript, CSS
-- **Backend**: Python, Django, Django REST Framework
-- **Database**: PostgreSQL
 - **Authentication**: JWT (JSON Web Tokens)
 - **API Requests**: Axios
-- **Routing**: React Router
 
 ## Installation
 
