@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>صفحه ی اصلی</h1>
+      <h1>درباره ی ما</h1>
     </div>
   );
 }
