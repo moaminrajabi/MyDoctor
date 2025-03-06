@@ -7,9 +7,9 @@ import idkLogo from "@/assets/logo/idk.svg";
 import certificateLogo from "@/assets/logo/certificate.svg";
 import enamadLogo from "@/assets/logo/enamad.svg";
 
-import MingcuteLinkedinFill from "../icons/MingcuteLinkedinFill";
-import MingcuteTelegramFill from "../icons/MingcuteTelegramFill";
-import MingcuteYoutubeFill from "../icons/MingcuteYoutubeFill";
+import MingcuteLinkedinFill from "../../icons/MingcuteLinkedinFill";
+import MingcuteTelegramFill from "../../icons/MingcuteTelegramFill";
+import MingcuteYoutubeFill from "../../icons/MingcuteYoutubeFill";
 
 import styles from "./footer.module.css";
 
