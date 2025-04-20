@@ -21,6 +21,14 @@ export default function HeaderComponent(): ReactElement {
           </li>
           <li>
             <Link
+              href="/search"
+              className={clsx(pathName === "/search" && styles.active)}
+            >
+              جستجو
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/about"
               className={clsx(pathName === "/about" && styles.active)}
             >
