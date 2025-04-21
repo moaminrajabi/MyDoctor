@@ -1,7 +1,8 @@
 import React from "react";
 
 import style from "./page.module.css";
-import Card from "@/components/card/Card";
+
+import Filter from "./components/filter/Filter";
 
 const items = Array(100)
   .fill(null)
@@ -11,11 +12,13 @@ function page() {
   return (
     <div className={style.page}>
       <div className={style.filters}>
-        <Card>
-          <div className={style.title}>زوج یا فرد</div>
-          <button>زوج</button>
-          <button>فرد</button>
-        </Card>
+        <Filter
+          title="زوج یا فرد"
+          options={[
+            { value: "even", label: "زوج" },
+            { value: "odd", label: "فرد" },
+          ]}
+        />
       </div>
       <ul className={style.results}>
         {items.map((item) => (

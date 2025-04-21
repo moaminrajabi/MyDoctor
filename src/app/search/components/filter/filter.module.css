@@ -1,0 +1,14 @@
+.filter {
+  .title {
+    font-weight: 500;
+  }
+  .button {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    > * {
+      flex: 1 0 auto;
+    }
+  }
+}
