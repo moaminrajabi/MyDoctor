@@ -22,7 +22,6 @@ function page() {
         <Filter
           title="بخش پذیری"
           options={[
-            { value: "tow", label: "بخش پذیری بر 2" },
             { value: "three", label: "بخش پذیری بر 3" },
             { value: "five", label: "بخش پذیری بر 5" },
             { value: "seven", label: "بخش پذیری بر 7" },
